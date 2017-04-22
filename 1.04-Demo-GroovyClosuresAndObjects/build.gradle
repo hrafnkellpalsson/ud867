@@ -7,7 +7,14 @@ from the scope in which they're declared.
 
 */
 
+// If we comment out the task line we can run the whole file as a groovy script
 task groovy {}
+
+def tripleIt(n) {
+  println "Triple it of ${n} is ${3*n}"
+}
+
+tripleIt(7)
 
 def foo = "One million dollars"
 def myClosure = {
