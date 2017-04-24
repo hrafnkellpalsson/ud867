@@ -15,3 +15,13 @@ Exercises:
 4. Run the "hello" task and observe the output.
 
 */
+
+class HelloTask extends DefaultTask {
+  @TaskAction
+  void doAction() {
+    println "Executing my custom task."
+  }
+}
+
+// HP Note, I don't need to pass the curly braces if their contents will just be empty!
+task hello(type: HelloTask) {}
