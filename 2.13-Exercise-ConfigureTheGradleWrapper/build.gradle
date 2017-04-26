@@ -19,3 +19,7 @@ Hint: For more information on using Gradle nightly builds, check out the
 Gradle website: http://gradle.org/gradle-nightly-build/
 
 */
+
+wrapper {
+  gradleVersion = '4.0-20170425000018+0000'
+}
